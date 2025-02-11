@@ -104,7 +104,7 @@
         // Init TWA
         Telegram.WebApp.ready();
 
-        const {first_name, last_name, username, photo_url} = Telegram.WebApp.initDataUnsafe.User // add hash validation
+        const {first_name, last_name, username, photo_url} = Telegram.WebApp.initDataUnsafe.user // add hash validation
         document.getElementById('username').innerText = username
         document.getElementById('first_name').innerText = first_name
         document.getElementById('last_name').innerText = last_name
