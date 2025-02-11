@@ -65,7 +65,7 @@
 <body>
     <main>
         <div align="center">
-            <a href="https://ton.org/"><img width="48" src="assetsapps.png" alt="logo of telegram web apps"></a>
+            <a href="https://ton.org/"><img width="48" src="assets/tapps.png" alt="logo of telegram web apps"></a>
         </div>
 
         <div>
@@ -119,9 +119,7 @@
         Telegram.WebApp.MainButton.setParams({
             text: 'Share my phone'
         });
-        Telegram.WebApp.MainButton.onClick(function () {
-            Telegram.WebApp.showAlert('Share my contact', requestContact())
-        });	
+        Telegram.WebApp.MainButton.onClick(requestContact());
         Telegram.WebApp.MainButton.show();
 
         // Function to call showPopup API
