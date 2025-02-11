@@ -119,7 +119,9 @@
         Telegram.WebApp.MainButton.setParams({
             text: 'Share my phone'
         });
-        Telegram.WebApp.MainButton.onClick(requestContact());
+        Telegram.WebApp.MainButton.onClick(function () {
+            requestContact()
+        });
         Telegram.WebApp.MainButton.show();
 
         // Function to call showPopup API
